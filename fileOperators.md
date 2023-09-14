@@ -1,0 +1,16 @@
+# A LIST OF SOME FILE OPERATORS IN BASH AND THEIR USAGE
+-b: The -b operator returns true if the file exists and it is a block special file such as hard drive, like /dev/sda. Block special files are files that act act as direct interface to block devices.
+-c: The -c operator is used to check if a file is a character special file such as a TTY device like /dev/TTY1, and if it is, it returns true. A character devcie is a device with which the Driver communicates by sending and receiving single characters. examples are serial ports, sound cards.
+-d: The -d operator is used to check if a file is a directory and it returns true if the condition is satisfied.
+-e: The -e operator is used to check if a file exists or not.
+-f: The -f operator is used to check if a file is a regular file, and NOT a directory or device file. A device, also known as  special file is an interface to a device driver which appears in a file system as if it were an ordinary file.
+-h: The -h operator is used to check if a file is a symbolic link. A symbolic link (symlink) is a file that points to other files  or directories.
+-r: The -r operator checks whether the given file has read access or not. If it has read access then it returns true, else it returns false.
+-w: The -w operator checks whether the given file has write access or not. If it has write access then it returns true otherwise false.
+-x: The -x operator checks whether the given file has execute access or not. If it has execute access then it returns true otherwise false.
+-s: The -s operator checks the size of the given file. If the size of given file is greater than 0 then it returns true otherwise it is false.
+-k: The -k operator returns true if a file exists and its sticky bit is set. The sticky bit is a permission bit that protects the files within a directory. If the directory has the sticky bit set, a file can be deleted only by the file owner, the directory owner, or by a privileged user (the root or admin).
+-p: The -p operator returns true if the file exists and is a named pipe (FIFO). a FIFO or named pipe is a special file similar to a pipe but with a name on the filesystem.
+-L filename: This operator returns true if a file exists and it is a symbolic link.
+-G filename: This operator returns true if the file exists and is owned by the effective group ID.
+-S filename: This operator returns true if the file exists and is a socket.
