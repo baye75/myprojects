@@ -1,0 +1,35 @@
+---
+- name: Executing the slavescript.sh on the slave machine
+  hosts: all
+  become: true
+  tasks:
+
+  - name: Updating and upgrading the server
+    apt:
+      update_cache: yes
+      upgrade: yes
+
+  - name: Setting a cron job to check the remote server's uptime every 12am
+    ansible.builtin.cron:
+      name: A cron job to check the remote server's uptime every 12am
+      state: present
+      minute: "0"
+      hour: "0"
+      day: "*"
+      month: "*"
+      weekday: "*"
+      job: "/usr/bin/uptime > /var/log/uptime_check.log 2>&1"
+
+  - name: Copying the script to the remote server
+    copy:
+      src: /home/vagrant/slavescript.sh
+      dest: ~/
+      mode: 0755
+      owner: root
+      group: root
+
+  - name: Setting file permissions
+    command: chmod +x ~/slavescript.sh
+
+  - name: Executing the script on the remote server
+    command: bash ~/slavescript.sh baye baye75 < /dev/null
