@@ -159,7 +159,7 @@ sudo chmod -R 775 /var/www/html/laravel/laravel/storage
 
 sudo chmod -R 775 /var/www/html/laravel/laravel/bootstrap/cache
 
-cd /var/www/html/laravel/laravel && cp .env.example .env
+cd /var/www/html/laravel/laravel && sudo cp .env.example .env
 
 cd /var/www/html/laravel/laravel && php artisan key:generate
 
