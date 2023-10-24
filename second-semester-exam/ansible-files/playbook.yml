@@ -22,7 +22,7 @@
 
   - name: Copying the script to the remote server
     copy:
-      src: /home/vagrant/slavescript.sh
+      src: ~/documents/altschool/myprojects/second-semester-exam/ansible-files/slavescript.sh
       dest: ~/
       mode: 0755
       owner: root

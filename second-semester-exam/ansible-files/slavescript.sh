@@ -16,14 +16,14 @@ sudo chown -R www-data:www-data /var/www
 
 sudo add-apt-repository -y ppa:ondrej/php
 sudo apt-get update
-sudo apt-get install libapache2-mod-php php php-common php-xml php-mysql php-gd php-mbstring 
-php-tokenizer php-json php-bcmath php-curl php-zip unzip -y
+sudo apt-get install libapache2-mod-php php php-common php-xml php-mysql php-gd php-mbstring php-tokenizer php-json php-bcmath php-curl php-zip unzip -y
+# sudo apt install php libapache2-mod-php php-mysql -y
 
-sudo systemctl restart apache2
+ sudo systemctl restart apache2
 
 # INSTALLING COMPOSER THAT MANAGES THE DEPENDENCIES AND LIBRARIES THAT PHP APPLICATIONS REQUIRE
 
-curl -sS https://getcomposer.org/installer | php
+sudo curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 
 # CONFIGURING APACHE TO HOST OUR LARAVEL APPLICATION
@@ -59,7 +59,7 @@ sudo systemctl restart apache2
 sudo mkdir /var/www/html/laravel && cd /var/www/html/laravel
 sudo git clone https://github.com/laravel/laravel.git
 
-cd /var/www/html/laravel/laravel && sudo composer install --no-dev
+cd /var/www/html/laravel/laravel && sudo composer install --no-dev --no-interaction
 
 # SETTING LARAVEL PERMISSIONS DOING SOME CONFIGURATIONS
 
@@ -73,7 +73,7 @@ sudo chmod -R 775 /var/www/html/laravel/laravel/bootstrap/cache
 
 cd /var/www/html/laravel/laravel && sudo cp .env.example .env
 
-cd /var/www/html/laravel/laravel && php artisan key:generate
+cd /var/www/html/laravel/laravel && php artisan key:generate --no-interaction
 
 # CREATING MYSQL USER AND DATABASE FOR LARAVEL APPLICATION
 
@@ -165,14 +165,14 @@ sudo bash -c "cat >> /etc/hosts" <<ABC
 192.168.56.21 laravel.example.com
 ABC
 
-echo "\n\nUPDATING COMPOSER\n"
+# echo "\n\nUPDATING COMPOSER\n"
 
-cd /var/www/html/laravel/laravel && sudo composer update
+# cd /var/www/html/laravel/laravel && sudo composer update --no-interaction
 
-echo "\n\nCACHING CONFIGURATIONS\n"
+# echo "\n\nCACHING CONFIGURATIONS\n"
 
-cd /var/www/html/laravel/laravel && sudo php artisan config:cache
+# cd /var/www/html/laravel/laravel && sudo php artisan config:cache --no-interaction
 
-echo "\n\nMIGRATING THE DATABASE TO COMPLETE SETUP OF LARAVEL PROJECT\n"
+# echo "\n\nMIGRATING THE DATABASE TO COMPLETE SETUP OF LARAVEL PROJECT\n"
 
-cd /var/www/html/laravel/laravel && sudo php artisan migrate
+# cd /var/www/html/laravel/laravel && sudo php artisan migrate --no-interaction
