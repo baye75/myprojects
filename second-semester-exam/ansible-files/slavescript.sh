@@ -17,9 +17,8 @@ sudo chown -R www-data:www-data /var/www
 sudo add-apt-repository -y ppa:ondrej/php
 sudo apt-get update
 sudo apt-get install libapache2-mod-php php php-common php-xml php-mysql php-gd php-mbstring php-tokenizer php-json php-bcmath php-curl php-zip unzip -y
-# sudo apt install php libapache2-mod-php php-mysql -y
 
- sudo systemctl restart apache2
+sudo systemctl restart apache2
 
 # INSTALLING COMPOSER THAT MANAGES THE DEPENDENCIES AND LIBRARIES THAT PHP APPLICATIONS REQUIRE
 
@@ -164,15 +163,3 @@ FGH
 sudo bash -c "cat >> /etc/hosts" <<ABC 
 192.168.56.21 laravel.example.com
 ABC
-
-# echo "\n\nUPDATING COMPOSER\n"
-
-# cd /var/www/html/laravel/laravel && sudo composer update --no-interaction
-
-# echo "\n\nCACHING CONFIGURATIONS\n"
-
-# cd /var/www/html/laravel/laravel && sudo php artisan config:cache --no-interaction
-
-# echo "\n\nMIGRATING THE DATABASE TO COMPLETE SETUP OF LARAVEL PROJECT\n"
-
-# cd /var/www/html/laravel/laravel && sudo php artisan migrate --no-interaction
