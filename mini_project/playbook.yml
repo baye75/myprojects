@@ -1,0 +1,38 @@
+---
+- name: Deploying and configuring Apache2
+  hosts: web_servers
+  become: true
+  tasks:
+                            
+  - name: Update and upgrade the servers
+    apt:
+      update_cache: yes
+      upgrade: yes
+
+  - name: Set timezone to Africa/Lagos
+    tags: time
+    timezone: name=Africa/Lagos
+
+  - name: Install Apache2
+    tags: Apache
+    apt:
+      name: apache2
+      state: latest
+
+  - name: Delete index.html
+    file:
+      path: /var/www/html/index.html
+      state: absent
+
+  - name: Using the printf script
+    shell: 
+      sudo echo "<h1>Welcometo my page...My hostname is:</h1>" >> /var/www/html/index.html
+      sudo echo "<p>$(hostname -f)</p>" >> /var/www/html/index.html
+    notify: restart Apache
+
+  handlers:
+    - name: restart Apache
+      tags: restart
+      service:
+        name: apache2
+        state: restarted
