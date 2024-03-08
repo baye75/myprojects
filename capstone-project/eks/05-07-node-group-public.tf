@@ -3,7 +3,7 @@ resource "aws_eks_node_group" "eks_ng_public" {
   node_group_name = "${local.name}-eks-ng-public"
   node_role_arn   = aws_iam_role.eks_nodegroup_role.arn
   subnet_ids      = module.vpc.public_subnets
-  version         = var.cluster_version #(Optional: Defaults to EKS Cluster Kubernetes version)    
+  version         = var.cluster_version    
 
   ami_type       = "AL2_x86_64"
   capacity_type  = "ON_DEMAND"
@@ -11,7 +11,7 @@ resource "aws_eks_node_group" "eks_ng_public" {
   instance_types = ["t2.xlarge"]
 
   remote_access {
-    ec2_ssh_key = "eu-central-key" # If you specify this configuration, but do not specify source_security_group_ids when you create an EKS Node Group port 22 is open to the Internet (0.0.0.0/0).
+    ec2_ssh_key = "eu-central-key"
   }
 
   scaling_config {
