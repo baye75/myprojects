@@ -1,0 +1,113 @@
+body {
+    text-align: center;
+    font-family: "Happy Monkey", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background: #a2d2ff;
+    color: #ffffff;
+    background: linear-gradient(#a2d2ff, #ef88c9);
+}
+
+#photo {
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid #ef88c9;
+}
+
+h1, h2, h3, h4, p {
+    text-shadow: 0px 0px 2px black;
+}
+
+#bday-age {
+    background: #ef88c9;
+    padding: 5px 10px;
+    margin: 5px 0 10px 0;
+    border-radius: 5px;
+}
+
+#bday-date {
+    background: #ef88c9;
+    padding: 5px 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift-section {
+    margin-top: 50px;
+}
+
+ .gift-img {
+    width: 400px;
+    height: 400px;
+    background-image: url("images/gift-cover.webp");
+    border:4px solid white;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+
+first-gift-hover {
+    margin-top: 0;
+}
+
+.gift-title {
+    margin-bottom: 10px;
+}
+
+#first-gift:hover {
+    background-image: url("images/happy.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fdfdfb;
+}
+
+#second-gift:hover {
+    background-image: url("images/happy2.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2b293a;
+}
+
+#third-gift:hover {
+    background-image: url("images/genuis.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e9e2da;
+}
+
+#fourth-gift:hover {
+    background-image: url("images/badass.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #5f5c58;
+}
+
+#fifth-gift:hover {
+    background-image: url("images/cheers.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4cd9e;
+}
+
+#fifth-gift {
+    height: 200px;
+}
+
+#footer {
+    margin: 32px auto 16px;
+    font-style: italic;
+    width: 400px;
+}
