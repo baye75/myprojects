@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WebDevStack</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Quantico:wght@400;700&family=Source+Code+Pro:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#f8fafc] text-slate-800 font-['Bai_Jamjuree',sans-serif] antialiased selection:bg-[#0F8B8D]/20 selection:text-[#0B4F51]">
+    <div class="min-h-screen overflow-x-hidden bg-[radial-gradient(circle_at_top_left,_rgba(15,139,141,0.16),_transparent_30%),radial-gradient(circle_at_top_right,_rgba(214,167,28,0.14),_transparent_28%),linear-gradient(to_bottom,_#f8fafc,_#ffffff,_#f8fafc)]">
+      <header class="fixed top-0 left-0 z-50 w-full border-b border-slate-200/70 bg-white/80 backdrop-blur-xl">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-6 lg:px-8">
+          <a href="#home" class="flex items-center gap-3">
+            <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#0F8B8D] text-sm font-bold text-white shadow-[0_12px_28px_rgba(15,139,141,0.24)]">WDS</div>
+            <div>
+              <p class="font-['Quantico',sans-serif] text-lg font-bold tracking-wide text-[#0B4F51]">WebDevStack</p>
+            </div>
+          </a>
+
+          <nav class="grid grid-cols-2 items-center gap-2 md:flex">
+            <a href="#overview" class="rounded-full px-4 py-2 text-sm font-semibold text-slate-600 transition hover:bg-[#0F8B8D]/8 hover:text-[#0F8B8D]">Overview</a>
+            <a href="#web-flow" class="rounded-full px-4 py-2 text-sm font-semibold text-slate-600 transition hover:bg-[#0F8B8D]/8 hover:text-[#0F8B8D]">Web Flow</a>
+            <a href="#html" class="rounded-full px-4 py-2 text-sm font-semibold text-slate-600 transition hover:bg-[#0F8B8D]/8 hover:text-[#0F8B8D]">HTML</a>
+            <a href="#css" class="rounded-full px-4 py-2 text-sm font-semibold text-slate-600 transition hover:bg-[#0F8B8D]/8 hover:text-[#0F8B8D]">CSS</a>
+            <a href="#join-us" class="col-span-2 text-center rounded-full bg-[#D6A71C] px-5 py-2.5 text-sm font-semibold text-white shadow-[0_12px_24px_rgba(214,167,28,0.26)] transition hover:-translate-y-0.5 hover:bg-[#c89915]">Join Us</a>
+          </nav>
+        </div>
+      </header>
+    <main id="home" class="mt-40 md:mt-32">
+        <!-- APPRECIATION -->
+        <section class="px-5 pt-8 sm:px-6 lg:px-8">
+          <div class="max-w-5xl mx-auto rounded-[2rem] border border-[#0F8B8D]/10 bg-white/90 px-8 py-7 shadow-xl shadow-[#0F8B8D]/10 backdrop-blur-sm">
+            <p class="text-center text-base md:text-lg font-semibold leading-8 text-slate-700">
+              On behalf of the entire team, we sincerely appreciate IOTBTech, our instructors, and our mentors for their dedication, 
+              sacrifices, and support throughout this journey. Your guidance, encouragement, and commitment to helping us 
+              learn have made a lasting impact on us, and we are truly grateful.
+            </p>
+          </div>
+        </section>
+    
+
+        <!-- HERO -->                                 
+        <section class="mx-auto max-w-7xl px-5 py-6 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-5xl text-center">
+            <h2 class="mt-2 font-['Quantico',sans-serif] text-4xl font-bold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
+                  Understand the web,
+                  <span class="text-[#0F8B8D]">structure it with HTML</span>,
+                  and style it with <span class="text-[#D6A71C]">CSS</span>.
+            </h2>
+             <p class="mt-4 mx-auto max-w-3xl text-base leading-8 text-slate-600 sm:text-lg">
+              A beginner-friendly presentation of how the internet works,
+               how HTML structures content, and how CSS brings design to life.            
+             </p>
+            </div>
+            <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <a href="#overview" class="inline-flex items-center justify-center rounded-full bg-[#0F8B8D] px-7 py-4 text-base font-semibold text-white shadow-[0_16px_32px_rgba(15,139,141,0.24)] transition hover:-translate-y-0.5 hover:bg-[#0b7678]">
+                Explore
+              </a>
+            </div>
+
+              
+        </section>
+        <!-- OVERVIEW -->
+        <section id="overview" class="mx-auto max-w-7xl px-5 py-6 sm:px-6 lg:px-8">
+          <div class="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+            <div class="max-w-3xl">
+              <p class="font-['Source_Code_Pro',monospace] text-sm uppercase tracking-[0.28em] text-[#0F8B8D]">Overview</p>
+              <h2 class="mt-3 font-['Quantico',sans-serif] text-3xl font-bold text-slate-900 sm:text-4xl">A simple roadmap for beginners</h2>
+              <p class="mt-4 text-base leading-8 text-slate-600 sm:text-lg">
+                To build well on the web, it helps to understand the internet, HTML, and CSS first.
+              </p>
+            </div>
+
+            <div class="mt-8 grid gap-8 md:grid-cols-3">
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">Internet</h3>
+                <p class="mt-2 text-sm leading-7 text-slate-600">Connects devices and moves information across networks.</p>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">HTML</h3>
+                <p class="mt-2 text-sm leading-7 text-slate-600">Gives websites structure using tags and elements.</p>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">CSS</h3>
+                <p class="mt-2 text-sm leading-7 text-slate-600">Adds styling, layout, and responsiveness.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- WEB FLOW -->
+        <section id="web-flow" class="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8">
+          <div class="grid gap-19 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+            <div class="rounded-[2rem] border border-slate-200 bg-slate-900 p-7 text-white shadow-[0_24px_60px_rgba(15,23,42,0.18)]">
+              <p class="font-['Source_Code_Pro',monospace] text-sm uppercase tracking-[0.28em] text-[#7ae7e9]">How the internet works</p>
+              <h2 class="mt-4 font-['Quantico',sans-serif] text-3xl font-bold leading-tight sm:text-4xl">The web is a client–server conversation.</h2>
+              <p class="mt-5 text-base leading-8 text-slate-300">
+                The browser sends a request, the server responds, and the page is displayed on screen.
+              </p>
+            </div>
+
+            <div class="rounded-[2rem]">
+              <p class="font-['Source_Code_Pro',monospace] text-sm uppercase tracking-[0.28em] text-[#D6A71C]">Simple flow</p>
+              <div class="mt-5 space-y-5">
+                <div>
+                  <p class="font-semibold text-slate-900">1. Enter a URL</p>
+                  <p class="mt-1 text-sm leading-7 text-slate-600">The browser prepares a request.</p>
+                </div>
+                <div>
+                  <p class="font-semibold text-slate-900">2. Find the server</p>
+                  <p class="mt-1 text-sm leading-7 text-slate-600">DNS helps locate the destination.</p>
+                </div>
+                <div>
+                  <p class="font-semibold text-slate-900">3. Send request</p>
+                  <p class="mt-1 text-sm leading-7 text-slate-600">HTTP asks for the needed page files.</p>
+                </div>
+                <div>
+                  <p class="font-semibold text-slate-900">4. Render page</p>
+                  <p class="mt-1 text-sm leading-7 text-slate-600">The browser shows the final result.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- HTML -->
+        <section id="html" class="border-y border-slate-200/80 bg-white/70">
+          <div class="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8">
+            <div class="grid gap-8 lg:grid-cols-2 lg:items-start">
+              <article class="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
+                <p class="font-['Source_Code_Pro',monospace] text-sm uppercase tracking-[0.28em] text-[#0F8B8D]">HTML summary</p>
+                <h2 class="mt-4 font-['Quantico',sans-serif] text-3xl font-bold text-slate-900 sm:text-4xl">
+                  HTML is the structure of the web.
+                </h2>
+                <p class="mt-5 text-base leading-8 text-slate-600">
+                  HTML uses tags and elements to organize content like headings, paragraphs, links, images, and forms.
+                </p>
+
+                <div class="mt-6 rounded-2xl bg-slate-900 p-5 text-sm text-slate-100">
+                  <p class="mb-3 font-semibold text-white">Basic document structure</p>
+                  <pre class="overflow-x-auto font-['Source_Code_Pro',monospace] leading-7"><code>&lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+          &lt;head&gt;...&lt;/head&gt;
+          &lt;body&gt;...&lt;/body&gt;
+        &lt;/html&gt;</code></pre>
+                </div>
+              </article>
+
+              <article class="rounded-[2rem] p-6">
+                <p class="font-['Source_Code_Pro',monospace] text-sm uppercase tracking-[0.28em] text-[#D6A71C]">HTML essentials</p>
+                <h3 class="mt-4 text-2xl font-bold text-slate-900">What HTML helps you do</h3>
+
+                <ul class="mt-5 space-y-3 text-sm leading-7 text-slate-600">
+                  <li><span class="font-semibold text-slate-900">Structure content</span> clearly on a page.</li>
+                  <li><span class="font-semibold text-slate-900">Define meaning</span> for browsers and users.</li>
+                  <li><span class="font-semibold text-slate-900">Support accessibility</span> with semantic elements.</li>
+                </ul>
+
+                <div class="mt-6">
+                  <p class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Semantic elements</p>
+                  <div class="mt-4 flex flex-wrap gap-3">
+                    <span class="rounded-full bg-[#0F8B8D]/10 px-4 py-2 text-sm text-[#0F8B8D]">&lt;header&gt;</span>
+                    <span class="rounded-full bg-[#0F8B8D]/10 px-4 py-2 text-sm text-[#0F8B8D]">&lt;nav&gt;</span>
+                    <span class="rounded-full bg-[#0F8B8D]/10 px-4 py-2 text-sm text-[#0F8B8D]">&lt;main&gt;</span>
+                    <span class="rounded-full bg-[#0F8B8D]/10 px-4 py-2 text-sm text-[#0F8B8D]">&lt;section&gt;</span>
+                    <span class="rounded-full bg-[#0F8B8D]/10 px-4 py-2 text-sm text-[#0F8B8D]">&lt;article&gt;</span>
+                    <span class="rounded-full bg-[#0F8B8D]/10 px-4 py-2 text-sm text-[#0F8B8D]">&lt;footer&gt;</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- CSS -->
+        <section id="css" class="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8">
+          <div class="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-start">
+            <div class="rounded-[2rem] p-6 ">
+              <p class="font-['Source_Code_Pro',monospace] text-sm uppercase tracking-[0.28em] text-[#0F8B8D]">CSS summary</p>
+              <h2 class="mt-4 font-['Quantico',sans-serif] text-3xl font-bold text-slate-900 sm:text-4xl">CSS brings design to the page.</h2>
+              <p class="mt-5 text-base leading-8 text-slate-600">
+                CSS controls colors, fonts, spacing, layout, and responsiveness.
+              </p>
+
+              <div class="mt-6 overflow-x-auto rounded-2xl bg-[#eef6f6] p-5 text-[#0B4F51]">
+                <pre class="font-['Source_Code_Pro',monospace] text-sm leading-7"><code>p {
+  color: blue;
+}</code></pre>
+              </div>
+            </div>
+
+            <div class="rounded-[2rem] p-6">
+              <h3 class="text-xl font-bold text-slate-900">CSS concepts that matter</h3>
+              <div class="mt-5 space-y-4 text-sm leading-7 text-slate-600">
+                <p><span class="font-semibold text-slate-900">Box Model:</span> Content, padding, border, and margin.</p>
+                <p><span class="font-semibold text-slate-900">Flexbox & Grid:</span> Help align and organize layouts.</p>
+                <p><span class="font-semibold text-slate-900">Specificity:</span> Decides which style wins.</p>
+                <p><span class="font-semibold text-slate-900">Responsive Design:</span> Makes pages work on all devices.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FINAL -->
+        <section class="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8">
+          <div class="rounded-[1rem] border border-slate-200 bg-white p-8 shadow-sm">
+            <div class="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
+              <div>
+                <p class="font-['Source_Code_Pro',monospace] text-sm uppercase tracking-[0.28em] text-[#0F8B8D]">Final takeaway</p>
+                <h2 class="mt-4 font-['Quantico',sans-serif] text-3xl font-bold text-slate-900 sm:text-4xl">Learn the flow. Learn the structure. Learn the styling.</h2>
+                <p class="mt-5 max-w-3xl text-base leading-8 text-slate-600">
+                  Once you understand the internet, HTML, and CSS, building better interfaces becomes easier and more meaningful.
+                </p>
+              </div>
+              <a href="#home" class="inline-flex items-center justify-center rounded-full bg-slate-900 px-7 py-4 text-base font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#0B4F51]">Back to top</a>
+            </div>
+          </div>
+        </section>
+          <section id="join-us" class="px-4 sm:px-6 lg:px-8 py-10">
+              <form class="w-full mx-auto space-y-6 rounded-2xl bg-white p-6 sm:p-8 shadow-lg border border-slate-200">
+
+    <h2 class="text-2xl sm:text-3xl font-bold text-slate-800">Join Us</h2>
+
+    <!-- Name -->
+    <div>
+      <label class="block text-sm font-medium text-slate-600 mb-1">Full Name</label>
+      <input 
+        type="text" 
+        placeholder="Enter your name"
+        class="w-full rounded-lg border border-slate-300 px-4 py-3 text-sm sm:text-base focus:border-[#0F8B8D] focus:ring-2 focus:ring-[#0F8B8D]/30 outline-none"
+      >
+    </div>
+
+    <!-- Email -->
+    <div>
+      <label class="block text-sm font-medium text-slate-600 mb-1">Email Address</label>
+      <input 
+        type="email" 
+        placeholder="Enter your email"
+        class="w-full rounded-lg border border-slate-300 px-4 py-3 text-sm sm:text-base focus:border-[#0F8B8D] focus:ring-2 focus:ring-[#0F8B8D]/30 outline-none"
+      >
+    </div>
+
+    <!-- Checkbox -->
+    <div class="flex items-start gap-2">
+      <input type="checkbox" class="mt-1 h-4 w-4 text-[#0F8B8D] border-slate-300 rounded focus:ring-[#0F8B8D]">
+      <span class="text-sm text-slate-600 leading-6">
+        I agree to the terms and conditions
+      </span>
+    </div>
+
+    <!-- Button -->
+    <button 
+      type="submit"
+      class="w-full rounded-lg bg-[#0F8B8D] py-3 text-white font-semibold text-sm sm:text-base hover:bg-[#0c6f71] transition"
+    >
+      Submit
+    </button>
+
+              </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+      <footer class="border-t border-slate-200 bg-white/90">
+        <div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8 text-center sm:px-6 lg:px-8">
+          <div class="mx-auto flex items-center gap-3">
+            <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#0F8B8D] text-sm font-bold text-white">WDS</div>
+            <div class="text-left">
+              <p class="font-['Quantico',sans-serif] text-base font-bold text-[#0B4F51]">WebDevStack</p>
+              <p class="text-xs uppercase tracking-[0.22em] text-slate-500">Landing page concept</p>
+            </div>
+          </div>
+          <p class="text-sm leading-7 text-slate-600">© 2026 WebDevStack • Presentation Project1</p>
+        </div>
+      </footer>
+  </div>
+</body>
+</html>
