@@ -1,0 +1,34 @@
+node_modules/
+.next/
+out/
+build/
+.DS_Store
+
+# Secrets — NEVER commit these
+.env
+.env.local
+.env*.local
+
+# Mentor-only material — belt and braces.
+# Nothing of the sort lives in this repo, but if a playbook, answer key or
+# solution folder is ever copied in here by accident, git will refuse to stage
+# it rather than publish it.
+*PRIVATE*
+*private*.md
+*MENTOR*
+*mentor*.md
+*PLAYBOOK*
+*playbook*.md
+*ANSWER-KEY*
+*answer-key*
+*SOLUTION*
+*-solution/
+*.solution.*
+TUTOR*
+INSTRUCTOR*
+
+npm-debug.log*
+yarn-error.log*
+*.tsbuildinfo
+next-env.d.ts
+.vercel
